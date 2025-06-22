@@ -1,0 +1,94 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8F0">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/greetingTextView"
+                android:text="Hey sunshine ✨"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/profileIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_profile"
+                android:contentDescription="Profile"
+                android:background="@drawable/circle_background"
+                android:padding="6dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/moodBubbleTextView"
+            android:text="💖 You're doing your best."
+            android:background="@drawable/mood_bubble"
+            android:padding="16dp"
+            android:textColor="#4B4B4B"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/startConversationButton"
+            android:text="🌱 Start a Journal"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#92C7A3"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/insightsButton"
+            android:text="🔍 Insights Reflections"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#769FCD"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/musicButton"
+            android:text="🎶 Mood Music"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#8EACCD"
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Recent Reflections"
+            android:textStyle="bold"
+            android:textColor="#5A5A5A"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recentEntriesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:clipToPadding="false"
+            android:scrollbars="vertical"
+            android:importantForAccessibility="no" />
+    </LinearLayout>
+</ScrollView>

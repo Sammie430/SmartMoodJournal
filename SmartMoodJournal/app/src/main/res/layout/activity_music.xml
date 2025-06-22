@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8F0"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/moodTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Analyzing mood..."
+        android:textSize="20sp"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/suggestMusicButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🎵 Suggest Music"
+        android:backgroundTint="#9BBEC8"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"
+        android:textAllCaps="false" />
+</LinearLayout>

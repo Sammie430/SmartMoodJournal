@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.SmartMoodJournal" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:statusBarColor">@color/purple_700</item>
+    </style>
+    <style name="CalendarViewTheme" parent="Theme.MaterialComponents.DayNight">
+        <item name="colorPrimary">#6200EE</item>
+        <item name="colorPrimaryVariant">#3700B3</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <item name="colorAccent">#03DAC5</item>
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:calendarViewShown">true</item>
+        <item name="android:weekDayTextAppearance">@style/CalendarWeekDayText</item>
+        <item name="android:dateTextAppearance">@style/CalendarDateText</item>
+    </style>
+
+    <!-- Customize weekday text -->
+    <style name="CalendarWeekDayText" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">#FF5722</item>
+    </style>
+
+    <!-- Customize date text -->
+    <style name="CalendarDateText" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">#3F51B5</item>
+    </style>
+</resources>

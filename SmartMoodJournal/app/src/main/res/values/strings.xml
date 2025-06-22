@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SmartMoodJournal</string>
+    <string name="default_web_client_id">176345638199-t67tdfip55ctuoiul1veho9to4s6850u.apps.googleusercontent.com</string>
+
+    <string name="profile_image_desc">Profile picture</string>
+    <string name="switch_user_desc">Switch User</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="date_of_birth">Date of Birth (DD/MM/YYYY)</string>
+    <string name="short_bio">Short Bio</string>
+    <string name="save_profile">Save Profile</string>
+    <string name="logout">Logout</string>
+</resources>

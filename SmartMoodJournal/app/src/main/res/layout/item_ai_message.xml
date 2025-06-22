@@ -1,0 +1,10 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/aiMessageText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bubble_ai"
+    android:textColor="#000"
+    android:padding="10dp"
+    android:layout_gravity="start"
+    android:textSize="16sp"
+    android:layout_margin="8dp" />

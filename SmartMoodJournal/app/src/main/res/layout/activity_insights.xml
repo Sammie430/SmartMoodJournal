@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/insightsScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Optional prompt input -->
+        <EditText
+            android:id="@+id/userPromptEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type or speak your journal thoughts..."
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/generateInsightsButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Generate Insight"
+                android:textAllCaps="false"
+                android:backgroundTint="#5C80BC"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="4dp" />
+
+            <ImageButton
+                android:id="@+id/voiceInputButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@android:drawable/ic_btn_speak_now"
+                android:background="@android:color/transparent"
+                android:contentDescription="Voice Input" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/insightsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🧠 AI-Powered Mood Insights"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#1E1E1E"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="16dp" />
+
+        <Button
+            android:id="@+id/summaryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generate Overall Summary"
+            android:textAllCaps="false"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:theme="@style/CalendarViewTheme" />
+
+        <TextView
+            android:id="@+id/insightsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📅 Select a date to get insights!"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:padding="8dp"
+            android:background="#FFFFFF"
+            android:elevation="2dp"
+            android:layout_marginBottom="24dp" />
+
+        <LinearLayout
+            android:id="@+id/musicSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/musicButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🎵 Play Mood Music"
+                android:textAllCaps="false"
+                android:backgroundTint="#03DAC5"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:elevation="2dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/insightTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:text="Your insights will appear here..."
+            android:textColor="#000000"
+            android:background="@android:color/white"
+            android:layout_marginBottom="32dp"
+            android:elevation="2dp" />
+    </LinearLayout>
+</ScrollView>
